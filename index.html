@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Melo Fotografia | Casamentos, retratos, famílias e eventos</title>
+  <meta name="description" content="Portfólio de Lucas Melo Fotografia. Veja a galeria, leia depoimentos de clientes e peça seu orçamento.">
+  <meta name="theme-color" content="#EFEEEA">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F0F0F'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23EFEEEA' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23C93B20'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__in">
+      <a href="#inicio" class="logo" aria-label="Lucas Melo Fotografia, início"><span data-icon="aperture" data-size="26"></span><span>Lucas Melo<small>Fotografia</small></span></a>
+      <nav id="nav" class="nav" aria-label="Principal">
+        <a href="#portfolio">Portfólio</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#depoimentos">Depoimentos</a>
+        <a href="#orcamento" class="btn btn--red nav__cta">Pedir orçamento</a>
+      </nav>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>Lucas Melo<em>Fotografia</em></h1>
+          <p class="hero__lead">Casamentos, retratos, famílias e eventos, fotografados com luz natural e atenção aos pequenos momentos que contam a história.</p>
+          <div class="hero__actions"><a href="#portfolio" class="btn btn--ink">Ver portfólio</a><a href="#orcamento" class="btn btn--line">Pedir orçamento</a></div>
+          <p class="hero__hint">Toque em um quadro da folha de contatos para ampliar.</p>
+        </div>
+        <div class="sheet" id="sheet"></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section section--dark">
+      <div class="container">
+        <div class="head"><h2>Portfólio</h2><p>Escolha uma categoria e clique em uma foto para ver em tela cheia.</p></div>
+        <div id="filters" class="pills" role="group" aria-label="Filtrar por categoria"></div>
+        <div id="gallery" class="gallery"></div>
+        <p class="note">Imagens de exemplo, geradas para demonstração. Substitua pelas fotos reais (veja o LEIA-ME).</p>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="head"><h2>Serviços</h2><p>Cada trabalho é pensado a partir da sua história. Conte o que você imagina e eu monto a proposta.</p></div>
+        <div id="services" class="svcs"></div>
+        <ol id="steps" class="steps"></ol>
+      </div>
+    </section>
+
+    <section id="sobre" class="section section--paper2">
+      <div class="container about">
+        <div id="about-img" class="about__img reveal"></div>
+        <div class="about__text reveal" data-delay="100"><h2 id="about-title"></h2><div id="about-text"></div><a href="#orcamento" class="btn btn--ink">Vamos conversar</a></div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section">
+      <div class="container t">
+        <div class="head"><h2>Quem já fotografou comigo</h2><p>Depoimentos de exemplo. Substitua por avaliações reais, com autorização dos clientes.</p></div>
+        <figure id="t-card" class="tcard is-in">
+          <blockquote id="t-text"></blockquote>
+          <figcaption><b id="t-name"></b><span id="t-role"></span></figcaption>
+        </figure>
+        <div class="t__ctrl">
+          <button type="button" id="t-prev" class="round" aria-label="Depoimento anterior"><span data-icon="left" data-size="22"></span></button>
+          <div id="t-dots" class="dots"></div>
+          <button type="button" id="t-next" class="round" aria-label="Próximo depoimento"><span data-icon="right" data-size="22"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="orcamento" class="section section--dark">
+      <div class="container quote">
+        <div class="quote__intro reveal">
+          <h2>Vamos criar algo bonito juntos?</h2>
+          <p>Preencha o pedido de orçamento com os detalhes do seu trabalho. Quanto mais informações, mais precisa a proposta.</p>
+          <p id="reply" class="reply" hidden></p>
+          <ul class="info">
+            <li><span data-icon="whatsapp" data-size="22"></span><a data-wa href="#orcamento">Chamar no WhatsApp</a></li>
+            <li><span data-icon="mail" data-size="22"></span><a data-mail href="#orcamento">e-mail</a></li>
+            <li><span data-icon="instagram" data-size="22"></span><a data-ig href="#orcamento">@instagram</a></li>
+            <li><span data-icon="pin" data-size="22"></span><span data-site="region"></span></li>
+          </ul>
+        </div>
+        <form id="quote" class="form reveal" data-delay="100" novalidate>
+          <label class="f"><span>Nome</span><input name="nome" type="text" autocomplete="name"><small role="alert" data-err="nome"></small></label>
+          <div class="row">
+            <label class="f"><span>WhatsApp (com DDD)</span><input name="telefone" type="tel" autocomplete="tel"><small role="alert" data-err="telefone"></small></label>
+            <label class="f"><span>E-mail</span><input name="email" type="email" autocomplete="email"><small role="alert" data-err="email"></small></label>
+          </div>
+          <div class="row">
+            <label class="f"><span>Tipo de trabalho</span><select name="servico" id="f-service"></select><small role="alert" data-err="servico"></small></label>
+            <label class="f"><span>Data prevista (opcional)</span><input name="data" id="f-date" type="date"></label>
+          </div>
+          <label class="f"><span>Cidade ou local (opcional)</span><input name="cidade" type="text"></label>
+          <label class="f"><span>Conte sobre o que você precisa</span><textarea name="mensagem" rows="4" placeholder="Quantas pessoas, estilo desejado, duração, referências…"></textarea><small role="alert" data-err="mensagem"></small></label>
+          <button class="btn btn--red btn--block" type="submit">Solicitar orçamento</button>
+          <p id="f-msg" class="form__msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer__in"><span class="logo">Lucas Melo<small>Fotografia</small></span><span>© <span data-year></span> Lucas Melo Fotografia. Todos os direitos reservados.</span></div></footer>
+
+  <div id="lb" class="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button type="button" id="lb-close" class="lb__btn lb__close" aria-label="Fechar"><span data-icon="x" data-size="24"></span></button>
+    <button type="button" id="lb-prev" class="lb__btn lb__nav lb__prev" aria-label="Foto anterior"><span data-icon="left" data-size="28"></span></button>
+    <div class="lb__stage">
+      <div id="lb-media" class="lb__media"></div>
+      <div class="lb__cap"><div><b id="lb-title"></b><small id="lb-cat"></small></div><span id="lb-count" class="lb__count"></span><a href="#orcamento" id="lb-cta" class="btn btn--red lb__cta" data-service="">Quero um trabalho assim</a></div>
+    </div>
+    <button type="button" id="lb-next" class="lb__btn lb__nav lb__next" aria-label="Próxima foto"><span data-icon="right" data-size="28"></span></button>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

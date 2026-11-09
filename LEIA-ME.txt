@@ -1,0 +1,28 @@
+LUCAS MELO FOTOGRAFIA - SITE PRONTO (sem terminal)
+
+COMO ABRIR
+1. Extraia o ZIP (botão direito > Extrair tudo).
+2. No VS Code: Arquivo > Abrir Pasta e escolha a pasta extraída (onde está o index.html).
+3. Com a extensão "Live Server" (Ritwick Dey): botão direito em index.html > Open with Live Server.
+
+ANTES DE ENTREGAR AO CLIENTE
+1. js/config.js : WhatsApp (obrigatório), e-mail, Instagram, região de atendimento.
+2. js/data.js   : serviços, etapas, texto "sobre" e depoimentos (tudo é EXEMPLO).
+
+FOTOS REAIS (muito importante)
+As imagens do portfólio são ilustrações de exemplo geradas pelo site.
+1. Use a pasta "img" (já existe, vazia) e coloque as fotos em .jpg ou .webp.
+   Dica de desempenho: largura de 1600 a 2000 px e arquivo com até 400 KB cada.
+2. Em js/data.js, em cada item de "photos", preencha:  img: 'img/nome-da-foto.jpg'
+   e ajuste "ratio" para a proporção da foto: '3/4', '4/3', '1/1' ou '2/3'.
+3. Para adicionar mais fotos, copie uma linha de "photos" e altere título, categoria e arquivo.
+   A folha de contatos do topo usa as 12 primeiras fotos.
+4. Foto do fotógrafo: em js/data.js, "about" > img: 'img/lucas.jpg'.
+
+DEPOIMENTOS
+Os textos são exemplos. Troque por avaliações reais, com autorização dos clientes.
+
+FORMULÁRIO DE ORÇAMENTO
+- Sem configuração: abre o WhatsApp do fotógrafo com o pedido preenchido.
+- Para receber por e-mail: crie um formulário gratuito em formspree.io e cole o endereço
+  em js/config.js (formEndpoint).
